@@ -75,6 +75,9 @@ function tienePropiedad(objeto, propiedad) {
   // "propiedad" es un string
   // De lo contrario, devuelve "false"
   // Tu código:
+
+//return objeto.hasOwnProperty(propiedad);
+
 if (objeto.hasOwnProperty(propiedad)) {return true;}
 return false;
 }
@@ -130,6 +133,7 @@ function sumarLikesDeUsuario(usuario) {
   // Devuelve la suma
   // Tu código:
       // usuario{posts:[post,post]}
+      // acumulador += usuario.posts[i].likes;
 
 var sumaLikes = 0;
 for(i = 0; i < usuario.posts.length; i++)
@@ -152,6 +156,7 @@ function agregarMetodoCalculoDescuento(producto) {
 producto.calcularPrecioDescuento = function()
 {return this.precio - (this.precio * this.porcentajeDeDescuento);}
 return producto;
+
 }
 
 // No modificar nada debajo de esta línea
